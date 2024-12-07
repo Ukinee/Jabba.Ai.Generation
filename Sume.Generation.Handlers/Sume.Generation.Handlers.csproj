@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Sume\Sume.Common.Domain\Sume.Common.Domain.csproj" />
+      <ProjectReference Include="..\..\Utilities\Jabba.Complex.LongOperations\Jabba.Complex.LongOperations.csproj" />
+      <ProjectReference Include="..\Sume.Generation.Services.Abstractions\Sume.Generation.Services.Abstractions.csproj" />
+      <ProjectReference Include="..\Sume.Generation.TaskProviders.Abstractions\Sume.Generation.TaskProviders.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>

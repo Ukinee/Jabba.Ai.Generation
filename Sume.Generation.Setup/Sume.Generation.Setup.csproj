@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.31.0" />
+      <PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.31.0-alpha" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Sume\Sume.Common.Configs\Sume.Common.Configs.csproj" />
+      <ProjectReference Include="..\Sume.Common\Sume.Common.csproj" />
+      <ProjectReference Include="..\Sume.Generation.Builders\Sume.Generation.Builders.csproj" />
+    </ItemGroup>
+
+</Project>

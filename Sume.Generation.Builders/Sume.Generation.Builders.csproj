@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sume.Generation.Handlers\Sume.Generation.Handlers.csproj" />
+      <ProjectReference Include="..\Sume.Generation.Services.Implementations\Sume.Generation.Services.Implementations.csproj" />
+    </ItemGroup>
+
+</Project>
