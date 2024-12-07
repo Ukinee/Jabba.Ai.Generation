@@ -8,8 +8,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jabba", "Jabba", "{1C70575F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jabba.Complex.LongOperations", "..\Utilities\Jabba.Complex.LongOperations\Jabba.Complex.LongOperations.csproj", "{3A9AD800-F9A6-464D-8C2A-9F7C1C6C14C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jabba.Common", "..\Utilities\Jabba.Common\Jabba.Common.csproj", "{6F508813-950C-466D-91E7-1AC315658DC7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sume.Generation.Handlers", "Sume.Generation.Handlers\Sume.Generation.Handlers.csproj", "{50623635-334D-4552-8488-8DBD46894117}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sume", "Sume", "{B87C9C68-4697-4D00-AAA5-10BC86E2DDF3}"

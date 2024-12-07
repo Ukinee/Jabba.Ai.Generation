@@ -9,8 +9,9 @@ namespace Startup
         {
             builder
                 .Services
-                .AddLogging();
-            
+                .AddLogging()
+                ;
+
             return builder;
         }
     }
