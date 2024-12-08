@@ -11,4 +11,8 @@
       <ProjectReference Include="..\Jabba.Ai.Generation.Services.Abstractions\Jabba.Ai.Generation.Services.Abstractions.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Jabba.Utilities" Version="1.0.0" />
+    </ItemGroup>
+
 </Project>

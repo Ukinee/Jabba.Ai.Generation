@@ -13,4 +13,8 @@
       <ProjectReference Include="..\Jabba.Ai.Generation.TaskProviders.Abstractions\Jabba.Ai.Generation.TaskProviders.Abstractions.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Jabba.Utilities" Version="1.0.0" />
+    </ItemGroup>
+
 </Project>

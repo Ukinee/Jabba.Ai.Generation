@@ -12,6 +12,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Jabba.Utilities" Version="1.0.0" />
       <PackageReference Include="Microsoft.SemanticKernel.Abstractions" Version="1.31.0" />
     </ItemGroup>
 
