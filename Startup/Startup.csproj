@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Sume.Generation.Handlers\Sume.Generation.Handlers.csproj" />
+      <ProjectReference Include="..\Sume.Generation.Handlers.Implementations\Sume.Generation.Handlers.Implementations.csproj" />
       <ProjectReference Include="..\Sume.Generation.Setup\Sume.Generation.Setup.csproj" />
     </ItemGroup>
 

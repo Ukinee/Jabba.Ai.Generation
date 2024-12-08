@@ -1,23 +1,23 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.SemanticKernel;
 using Sume.Generation.Setup;
 
-namespace Startup;
-
-class Program
+namespace Startup
 {
-    [Experimental("SKEXP0070")]
-    static async Task Main(string[] args)
+    class Program
     {
-        // BlockingCollection<string> files = new BlockingCollection<string>();
-        // IMemoryStore memoryStore = null;
-        // IVectorStore vectorStore = null;
+        [Experimental("SKEXP0070")]
+        static void Main(string[] args)
+        {
+            // BlockingCollection<string> files = new BlockingCollection<string>();
+            // IMemoryStore memoryStore = null;
+            // IVectorStore vectorStore = null;
 
-        IKernelBuilder builder = Kernel.CreateBuilder()
-            .SetupCore()
-            .SetupGeneration();
+            IKernelBuilder builder = Kernel.CreateBuilder()
+                .SetupCore()
+                .SetupGeneration();
         
-        Kernel kernel = builder.Build();
+            Kernel kernel = builder.Build();
+        }
     }
 }

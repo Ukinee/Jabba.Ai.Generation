@@ -6,9 +6,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Imports", "Imports", "{254B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jabba", "Jabba", "{1C70575F-8BE3-4EFD-A2EA-D40E06408F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jabba.Complex.LongOperations", "..\Utilities\Jabba.Complex.LongOperations\Jabba.Complex.LongOperations.csproj", "{3A9AD800-F9A6-464D-8C2A-9F7C1C6C14C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jabba.Complex.LongOperations.Implementations", "..\Utilities\Jabba.Complex.LongOperations.Implementations\Jabba.Complex.LongOperations.Implementations.csproj", "{3A9AD800-F9A6-464D-8C2A-9F7C1C6C14C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sume.Generation.Handlers", "Sume.Generation.Handlers\Sume.Generation.Handlers.csproj", "{50623635-334D-4552-8488-8DBD46894117}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sume.Generation.Handlers.Implementations", "Sume.Generation.Handlers.Implementations\Sume.Generation.Handlers.Implementations.csproj", "{50623635-334D-4552-8488-8DBD46894117}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sume", "Sume", "{B87C9C68-4697-4D00-AAA5-10BC86E2DDF3}"
 EndProject
@@ -29,6 +29,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sume.Generation.Setup", "Sume.Generation.Setup\Sume.Generation.Setup.csproj", "{6020BC72-0D45-44CF-95C4-9B403E9F06A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sume.Common.Configs", "..\Sume\Sume.Common.Configs\Sume.Common.Configs.csproj", "{0D032ACA-435F-4647-9A95-D50D7F894993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sume.Generation.Common", "Sume.Generation.Common\Sume.Generation.Common.csproj", "{A131631E-4541-46B8-8AEC-759EDFBB9DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jabba.Complex.LongOperations.Abstractions", "..\Utilities\Jabba.Complex.LongOperations.Abstractions\Jabba.Complex.LongOperations.Abstractions.csproj", "{153156A6-ACC9-4E47-9CAB-741C7A451989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,6 +92,14 @@ Global
 		{0D032ACA-435F-4647-9A95-D50D7F894993}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D032ACA-435F-4647-9A95-D50D7F894993}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D032ACA-435F-4647-9A95-D50D7F894993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A131631E-4541-46B8-8AEC-759EDFBB9DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A131631E-4541-46B8-8AEC-759EDFBB9DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A131631E-4541-46B8-8AEC-759EDFBB9DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A131631E-4541-46B8-8AEC-759EDFBB9DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{153156A6-ACC9-4E47-9CAB-741C7A451989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153156A6-ACC9-4E47-9CAB-741C7A451989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153156A6-ACC9-4E47-9CAB-741C7A451989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153156A6-ACC9-4E47-9CAB-741C7A451989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1C70575F-8BE3-4EFD-A2EA-D40E06408F36} = {254B1429-55F3-412F-AABB-A830C5E2D5F7}
@@ -96,5 +108,6 @@ Global
 		{B87C9C68-4697-4D00-AAA5-10BC86E2DDF3} = {254B1429-55F3-412F-AABB-A830C5E2D5F7}
 		{40FC0F5A-E54D-4B1E-ADB3-823851AEE07A} = {B87C9C68-4697-4D00-AAA5-10BC86E2DDF3}
 		{0D032ACA-435F-4647-9A95-D50D7F894993} = {B87C9C68-4697-4D00-AAA5-10BC86E2DDF3}
+		{153156A6-ACC9-4E47-9CAB-741C7A451989} = {1C70575F-8BE3-4EFD-A2EA-D40E06408F36}
 	EndGlobalSection
 EndGlobal

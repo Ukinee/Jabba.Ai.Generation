@@ -1,4 +1,6 @@
-﻿using Microsoft.SemanticKernel.ChatCompletion;
+﻿using Jabba.Complex.LongOperations.Abstractions;
+using Microsoft.SemanticKernel.ChatCompletion;
+using Sume.Generation.Common;
 using Sume.Generation.Domain;
 using Sume.Generation.Services.Abstractions;
 using Sume.Generation.Services.Abstractions.Components;
@@ -16,11 +18,13 @@ namespace Sume.Generation.Services.Implementations
             _chatHistoryService = chatHistoryService;
         }
         
-        public async Task<ChatHistory> Get(RawTask task, CancellationToken cancellationToken)
+        public async Task<ChatHistory> Get(ITaskHandler executor, RawTask task, CancellationToken cancellationToken)
         {
-            T taskData = await _taskDataProvider.GetTaskData(task, cancellationToken);
+            executor.Stage = GenerationStages.GettingTaskData;
+            T taskData = await _taskDataProvider.GetTaskData(executor, task, cancellationToken);
 
-            return await _chatHistoryService.Get(taskData, cancellationToken);
+            executor.Stage = GenerationStages.GeneratingChatHistory;
+            return await _chatHistoryService.Get(executor, taskData, cancellationToken);
         }
     }
 }

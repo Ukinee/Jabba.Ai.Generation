@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Sume.Generation.Domain;
-using Sume.Generation.Handlers;
+using Sume.Generation.Handlers.Implementations;
 using Sume.Generation.Services.Abstractions.Components;
 using Sume.Generation.Services.Implementations;
 using Sume.Generation.TaskProviders.Abstractions;

@@ -13,7 +13,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Sume\Sume.Common.Configs\Sume.Common.Configs.csproj" />
-      <ProjectReference Include="..\Sume.Common\Sume.Common.csproj" />
       <ProjectReference Include="..\Sume.Generation.Builders\Sume.Generation.Builders.csproj" />
     </ItemGroup>
 

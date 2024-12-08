@@ -1,11 +1,12 @@
 ﻿using Jabba.Complex.LongOperations.Handlers;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel.ChatCompletion;
+using Sume.Generation.Common;
 using Sume.Generation.Domain;
 using Sume.Generation.Services.Abstractions;
 using Sume.Generation.TaskProviders.Abstractions;
 
-namespace Sume.Generation.Handlers
+namespace Sume.Generation.Handlers.Implementations
 {
     public class GenerationLongOperationHandler : LongOperationHandlerBase
     {
@@ -30,14 +31,21 @@ namespace Sume.Generation.Handlers
         protected override async Task Run(CancellationToken softToken, CancellationToken forceToken)
         {
             CancellationToken cancellationToken = CancellationTokenSource.CreateLinkedTokenSource(softToken, forceToken).Token;
+            Stage = GenerationStages.Starting;
 
             while (cancellationToken.IsCancellationRequested == false && _taskProvider.HasTasks)
             {
+                Stage = GenerationStages.AwaitingTask;
                 RawTask task = _taskProvider.Get(cancellationToken);
-                ChatHistory chatHistory = await _chatHistoryProvider.Get(task, cancellationToken);
-                
-                await _generationHandler.Handle(task, chatHistory, forceToken);
+
+                Stage = GenerationStages.GettingChatHistory;
+                ChatHistory chatHistory = await _chatHistoryProvider.Get(this, task, cancellationToken);
+
+                Stage = GenerationStages.GeneratingAnswer;
+                await _generationHandler.Handle(this, task, chatHistory, forceToken);
             }
+
+            Stage = GenerationStages.Completing;
         }
     }
 }
