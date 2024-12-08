@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Jabba.Utilities\Jabba.Complex.LongOperations.Abstractions\Jabba.Complex.LongOperations.Abstractions.csproj" />
       <ProjectReference Include="..\Sume.Generation.Common\Sume.Generation.Common.csproj" />
       <ProjectReference Include="..\Sume.Generation.Services.Abstractions\Sume.Generation.Services.Abstractions.csproj" />
     </ItemGroup>

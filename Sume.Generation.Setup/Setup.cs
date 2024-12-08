@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.SemanticKernel;
 using OllamaSharp;
-using Sume.Common;
 using Sume.Common.Configs;
 using Sume.Generation.Builders;
 

@@ -8,8 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Jabba.Utilities\Jabba.Complex.LongOperations.Abstractions\Jabba.Complex.LongOperations.Abstractions.csproj" />
-      <ProjectReference Include="..\..\Sume\Sume.Common.Domain\Sume.Common.Domain.csproj" />
       <ProjectReference Include="..\..\Utilities\Jabba.Complex.LongOperations.Abstractions\Jabba.Complex.LongOperations.Abstractions.csproj" />
       <ProjectReference Include="..\Sume.Generation.Domain\Sume.Generation.Domain.csproj" />
     </ItemGroup>
