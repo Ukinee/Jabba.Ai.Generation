@@ -7,16 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Utilities\Jabba.Complex.LongOperations.Implementations\Jabba.Complex.LongOperations.Implementations.csproj" />
+      <ProjectReference Include="..\Submodules\Jabba.Utilities\Jabba.Complex.LongOperations.Implementations\Jabba.Complex.LongOperations.Implementations.csproj" />
       <ProjectReference Include="..\Sume.Generation.Common\Sume.Generation.Common.csproj" />
       <ProjectReference Include="..\Sume.Generation.Services.Abstractions\Sume.Generation.Services.Abstractions.csproj" />
       <ProjectReference Include="..\Sume.Generation.TaskProviders.Abstractions\Sume.Generation.TaskProviders.Abstractions.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="Jabba.Common">
-        <HintPath>..\..\Jabba.Utilities\Jabba.Common\bin\Debug\net8.0\Jabba.Common.dll</HintPath>
-      </Reference>
     </ItemGroup>
 
 </Project>

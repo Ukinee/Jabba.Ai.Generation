@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.SemanticKernel;
 using OllamaSharp;
-using Sume.Common.Configs;
 using Sume.Generation.Builders;
 
 namespace Sume.Generation.Setup
@@ -10,18 +9,18 @@ namespace Sume.Generation.Setup
     public static class Setup
     {
         [Experimental("SKEXP0070")]
-        public static IKernelBuilder SetupGeneration(this IKernelBuilder builder)
+        public static IKernelBuilder SetupGeneration(this IKernelBuilder builder, OllamaApiClient.Configuration chatConfig, OllamaApiClient.Configuration embeddingConfig)
         {
             return builder
                 .SetupServices()
-                .SetupOllama();
+                .SetupOllama(chatConfig, embeddingConfig);
         }
 
         [Experimental("SKEXP0070")]
-        private static IKernelBuilder SetupOllama(this IKernelBuilder builder)
+        private static IKernelBuilder SetupOllama(this IKernelBuilder builder, OllamaApiClient.Configuration chatConfig, OllamaApiClient.Configuration embeddingConfig)
         {
-            OllamaApiClient chatClient = new OllamaApiClient(OllamaConfigs.GenerationConfig);
-            OllamaApiClient embeddingClient = new OllamaApiClient(OllamaConfigs.EmbeddingConfig);
+            OllamaApiClient chatClient = new OllamaApiClient(chatConfig);
+            OllamaApiClient embeddingClient = new OllamaApiClient(embeddingConfig);
             
             builder.AddOllamaChatCompletion(chatClient);
             builder.AddOllamaTextEmbeddingGeneration(embeddingClient);
