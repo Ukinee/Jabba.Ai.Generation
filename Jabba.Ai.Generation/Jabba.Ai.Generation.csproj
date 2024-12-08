@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="..\Jabba.Ai.Generation.Builders\bin\Release\net8.0\Jabba.Ai.Generation.Builders.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.Common\bin\Release\net8.0\Jabba.Ai.Generation.Common.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.Domain\bin\Release\net8.0\Jabba.Ai.Generation.Domain.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.Handlers.Implementations\bin\Release\net8.0\Jabba.Ai.Generation.Handlers.Implementations.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.Services.Abstractions\bin\Release\net8.0\Jabba.Ai.Generation.Services.Abstractions.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.Services.Implementations\bin\Release\net8.0\Jabba.Ai.Generation.Services.Implementations.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.Setup\bin\Release\net8.0\Jabba.Ai.Generation.Setup.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.TaskProviders.Abstractions\bin\Release\net8.0\Jabba.Ai.Generation.TaskProviders.Abstractions.dll" Pack="true" PackagePath="lib\net8.0"/>
+        <Content Include="..\Jabba.Ai.Generation.TaskProviders.Implementations\bin\Release\net8.0\Jabba.Ai.Generation.TaskProviders.Implementations.dll" Pack="true" PackagePath="lib\net8.0"/>
+    </ItemGroup>
+
+</Project>
