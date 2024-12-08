@@ -1,9 +1,9 @@
-﻿using Jabba.Complex.LongOperations.Abstractions;
-using Microsoft.SemanticKernel.ChatCompletion;
-using Jabba.Ai.Generation.Common;
+﻿using Jabba.Ai.Generation.Common;
 using Jabba.Ai.Generation.Domain;
 using Jabba.Ai.Generation.Services.Abstractions;
 using Jabba.Ai.Generation.Services.Abstractions.Components;
+using Jabba.Complex.LongOperations.Abstractions;
+using Microsoft.SemanticKernel.ChatCompletion;
 
 namespace Jabba.Ai.Generation.Services.Implementations
 {
