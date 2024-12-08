@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Jabba.Ai.Generation.Common\Jabba.Ai.Generation.Common.csproj" />
+      <ProjectReference Include="..\Jabba.Ai.Generation.Services.Abstractions\Jabba.Ai.Generation.Services.Abstractions.csproj" />
+    </ItemGroup>
+
+</Project>
